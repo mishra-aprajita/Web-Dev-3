@@ -2,10 +2,22 @@
 2.Path-if i want to find any folder 
 3.Dns- domain name system , Ip add.......
 4.fs
-5.http
+
+
+5.http- HyperText Transfer Protocol
+It is a protocol used for communication between a web browser (client) and a web server. make server 
+***(HTTP ek protocol/rule set hai jo browser (client) aur server ke beech data communicate/transfer karne ke liye use hota hai.)
+*----communication -> GATE, POST, PUT, PATCH, DELETE 
+---GET → Server se data lena
+POST → Server par naya data bhejna/create karna
+PUT → Existing data ko completely update karna
+PATCH → Existing data ko partially update karna
+DELETE → Server se data delete karna-----
+
+
 6.process
 7.crypto 
 8.core model - this are called core model cus they are pre installed with node.js and we can use them without without installing 
 9.Cripto - used for hasing and encryting data.. 
-10.
+10.CLI - node.js.and , data capturing 
 

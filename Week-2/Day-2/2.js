@@ -50,13 +50,3 @@ fs.appendFile("./1.txt", "\nKese ho aap", (err) => {
 
 fs.appendFileSync("./1.txt", "\nPadlo abhi bhi time hai");
 console.log("file updated successfully");
-
-
-
-
-
-
-
-
-
-
