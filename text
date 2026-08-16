@@ -21,3 +21,9 @@ DELETE → Server se data delete karna-----
 9.Cripto - used for hasing and encryting data.. 
 10.CLI - node.js.and , data capturing 
 
+
+
+// Web browser:-- only use get method to send request to server.that's why we use 
+ postmen to send rewuest to server by other methods like post,put,patch,delete etc.
+ and to test the api's. we can also use postman to send get request to server.//
+
