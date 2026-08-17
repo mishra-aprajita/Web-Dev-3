@@ -13,17 +13,29 @@ POST → Server par naya data bhejna/create karna
 PUT → Existing data ko completely update karna
 PATCH → Existing data ko partially update karna
 DELETE → Server se data delete karna-----
+//*Web browser:-- only use get method to send request to server.that's why we use 
+ postmen to send rewuest to server by other methods like post,put,patch,delete etc.
+ and to test the api's. we can also use postman to send get request to server.*//
+
+
 
 
 6.process
 7.crypto 
-8.core model - this are called core model cus they are pre installed with node.js and we can use them without without installing 
+
+8.#model
+*-core model - this are called core model cus they are pre installed with node.js and we can use them without without installing 
+*-Internal model-
+*-External Model
+
 9.Cripto - used for hasing and encryting data.. 
 10.CLI - node.js.and , data capturing 
+11.Rouder->
 
 
 
-// Web browser:-- only use get method to send request to server.that's why we use 
- postmen to send rewuest to server by other methods like post,put,patch,delete etc.
- and to test the api's. we can also use postman to send get request to server.//
+
+
+
+
 
