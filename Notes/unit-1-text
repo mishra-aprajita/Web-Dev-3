@@ -1,0 +1,302 @@
+1. OS — Operating System
+
+OS: Software that manages the computer's hardware, files, memory, and applications.
+Example: Windows, macOS, Linux.
+
+2. path Module
+
+Path: Used to work with file and folder paths in Node.js.
+
+Example:
+
+path.join("folder", "file.txt")
+3. fs — File System
+
+fs: Used to create, read, update, and delete files/folders in Node.js.
+
+Example:
+
+fs.readFile()
+fs.writeFile()
+4. dns — Domain Name System
+
+DNS: Converts a domain name into an IP address.
+
+Example:
+
+google.com → IP address
+
+5. process
+
+process: Gives information/control about the currently running Node.js program.
+
+Important:
+
+process.argv
+
+process.argv → Used to take command-line arguments/input.
+
+6. crypto
+
+crypto: Used for encryption, hashing, and generating secure values.
+
+Example:
+
+Password hashing
+Data encryption
+Security-related operations
+
+Hashing ≠ Encryption
+
+Hashing: One-way → cannot normally be reversed.
+Encryption: Can be decrypted using a key.
+7. Node.js Modules
+
+A module is a reusable piece of code that we can import and use.
+
+Types of Modules
+
+A. Core/Built-in Modules
+Already provided by Node.js; no installation needed.
+
+Examples:
+
+fs
+path
+dns
+http
+crypto
+process
+
+B. External/Third-party Modules
+Created by other developers and installed using npm.
+
+Example:
+
+npm install express
+
+C. Internal/Local Modules
+Modules/files created by you inside your project.
+
+Example:
+
+require("./math")
+8. npm
+
+npm = Node Package Manager
+
+Used to:
+
+Install packages
+Manage dependencies
+Create/manage Node.js projects
+Basic setup
+
+Step 1:
+
+npm init -y
+
+Creates package.json.
+
+Step 2:
+
+npm install is-even
+
+Installs an external package.
+
+Step 3: Import/use the package.
+
+For CommonJS:
+
+const isEven = require("is-even");
+
+Step 4: Use it in your program.
+
+9. CommonJS vs ES Modules
+
+Two ways to work with modules in Node.js.
+
+CommonJS
+
+Uses:
+
+require()
+module.exports
+
+Example:
+
+const fs = require("fs");
+ES Modules
+
+Uses:
+
+import
+export
+
+Example:
+
+import fs from "fs";
+
+Easy difference:
+
+CommonJS → require
+
+ES Module → import/export
+
+10. CLI — Command Line Interface
+
+CLI: Interface where we interact with a program using commands in the terminal.
+
+Example:
+
+node app.js
+
+Node.js can also receive command-line input using:
+
+process.argv
+11. HTTP
+
+HTTP = HyperText Transfer Protocol
+
+It is a set of rules used for communication between client and server.
+
+Simple:
+
+Client → Request → Server
+
+Server → Response → Client
+
+Example:
+
+Browser requests a webpage → Server sends response.
+
+12. HTTP Methods
+
+HTTP methods tell the server what action we want to perform.
+
+Method	Meaning
+GET	Get/read data
+POST	Create/send new data
+PUT	Completely update existing data
+PATCH	Partially update existing data
+DELETE	Delete data
+PUT vs PATCH
+
+PUT → Complete update
+
+PATCH → Partial update
+
+Example:
+
+Existing user:
+
+Name: Aprajita
+Age: 19
+City: Delhi
+
+PUT → Send the complete updated user.
+
+PATCH → Send only:
+
+Age: 20
+13. Browser & API Testing
+
+A browser normally makes GET requests easily through the address bar.
+
+For testing APIs with methods like:
+
+GET
+POST
+PUT
+PATCH
+DELETE
+
+we commonly use tools such as Postman.
+
+Postman allows us to:
+
+Send API requests
+Add request body
+Add headers
+Test APIs
+Check server responses
+
+Important correction: Browsers are not limited to GET. JavaScript running in a browser can send POST, PUT, PATCH, DELETE, etc. The address bar itself is primarily for GET navigation.
+
+14. JSON
+
+JSON = JavaScript Object Notation
+
+A lightweight, commonly used data-interchange format between client and server.
+
+Example:
+
+{
+  "name": "Aprajita",
+  "age": 19
+}
+JSON.stringify()
+
+Object → JSON string
+
+JSON.stringify(obj)
+JSON.parse()
+
+JSON string → JavaScript object
+
+JSON.parse(data)
+
+Easy trick:
+
+Stringify → String
+
+Parse → Object
+
+15. Router
+
+A Router is used to organize different API routes/endpoints.
+
+Example:
+
+/users
+/products
+/orders
+
+Instead of putting everything in one file, we can separate routes.
+
+16. Express.js
+
+Express.js: A minimal and unopinionated web framework for Node.js, commonly used to create servers and REST APIs.
+
+It makes handling:
+
+Routes
+Requests
+Responses
+Middleware
+APIs
+
+easier.
+
+Example:
+
+app.get("/users", (req, res) => {
+    res.send("Users");
+});
+"Minimal" means:
+
+It provides the basic tools without forcing a large structure.
+
+"Unopinionated" means:
+
+It does not force you to organize your application in one particular way.
+
+17. minimist
+
+minimist: An external npm package used to parse command-line arguments.
+
+Example command:
+
+node app.js --name Aprajita
+
+It helps convert command-line arguments into an easier-to-use object.
