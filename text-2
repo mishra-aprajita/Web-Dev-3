@@ -1,0 +1,30 @@
+Node.js
+   ↓
+Modules
+   ↓
+Core Modules
+   ├── fs
+   ├── path
+   ├── dns
+   ├── crypto
+   ├── http
+   └── process
+
+   ↓
+npm
+   ↓
+External Modules
+   ↓
+Express.js
+   ↓
+Server
+   ↓
+HTTP
+   ↓
+API / Routes
+   ↓
+GET / POST / PUT / PATCH / DELETE
+   ↓
+JSON
+   ↓
+Client ↔ Server
