@@ -1,9 +1,8 @@
 1.OS-Operating system 
 2.Path-if i want to find any folder 
 3.Dns- domain name system , Ip add.......
-4.fs
-dns
-
+4.fs (File System): Used to work with files and folders in Node.js.
+...dns (Domain Name System): Used to find the IP address of a domain name.
 
 
 5.http- HyperText Transfer Protocol
