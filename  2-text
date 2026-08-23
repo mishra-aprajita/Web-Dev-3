@@ -28,3 +28,4 @@ GET / POST / PUT / PATCH / DELETE
 JSON
    ↓
 Client ↔ Server
+
