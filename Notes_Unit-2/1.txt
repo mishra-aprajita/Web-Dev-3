@@ -1,0 +1,10 @@
+express.js 
+server
+creating api 
+initilasation set up
+npm express node mon 
+put method - complate data update 
+patch method - partisaly data update 
+dlt method - 
+gate 
+POST- 
