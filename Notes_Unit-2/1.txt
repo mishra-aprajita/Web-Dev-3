@@ -8,3 +8,96 @@ patch method - partisaly data update
 dlt method - 
 gate 
 POST- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Unit 2 — Node.js & Express.js | Crisp Revision Notes
+1. Node.js
+
+A JavaScript runtime environment that allows JavaScript to run outside the browser, 
+mainly on the server.
+
+2. npm
+
+Node Package Manager — used to install and manage packages and initialize Node.js
+ projects.
+
+3. Express.js
+
+A web framework for Node.js used to build servers, APIs, and handle routes easily.
+
+4. Server
+
+A program that receives requests from clients, processes them, and sends responses.
+
+5. API
+
+Application Programming Interface — allows communication between the client/frontend 
+and server/backend.
+
+6. Route
+
+Defines what the server should do for a particular URL and HTTP method.
+
+7. HTTP Methods
+GET → Read/fetch data
+POST → Create new data
+PUT → Completely update data
+PATCH → Partially update data
+DELETE → Delete data
+8. CRUD
+
+Create → POST
+Read → GET
+Update → PUT/PATCH
+Delete → DELETE
+
+9. PUT vs PATCH
+
+PUT = Complete update
+PATCH = Partial update
+
+10. Request (req)
+
+Information sent from client to server.
+
+req.params → URL parameters
+req.query → Query parameters
+req.body → Data sent in request body
+11. Response (res)
+
+Information/result sent from server to client.
+
+12. Middleware
+
+A function that runs between the request and response and can process or modify the
+ request.
+
+13. express.json()
+
+Used to parse JSON data from the request body.
+
+14. Nodemon
+
+A development tool that automatically restarts the server when code changes.
+
+15. Basic Flow
+
+Client → Request → Express Server → Route/Logic → Response → Client
+
+One-minute revision:
+
+Node.js runs JavaScript on the server. Express.js helps build servers
+and APIs. APIs enable client-server communication. Routes handle requests.
+GET reads, POST creates, PUT completely updates, PATCH partially updates, and DELETE 
+removes data. Nodemon automatically restarts the server during development.
