@@ -101,3 +101,4 @@ Node.js runs JavaScript on the server. Express.js helps build servers
 and APIs. APIs enable client-server communication. Routes handle requests.
 GET reads, POST creates, PUT completely updates, PATCH partially updates, and DELETE 
 removes data. Nodemon automatically restarts the server during development.
+----
