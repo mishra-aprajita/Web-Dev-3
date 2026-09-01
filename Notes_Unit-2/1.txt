@@ -97,7 +97,6 @@ A development tool that automatically restarts the server when code changes.
 Client → Request → Express Server → Route/Logic → Response → Client
 
 One-minute revision:
-
 Node.js runs JavaScript on the server. Express.js helps build servers
 and APIs. APIs enable client-server communication. Routes handle requests.
 GET reads, POST creates, PUT completely updates, PATCH partially updates, and DELETE 
