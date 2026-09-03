@@ -1,0 +1,19 @@
+ID value
+3 method -- use to send server data 
+- request body 
+- request.parms 
+in any website/tshirt/,..........
+-  Query parameter 
+
+
+
+
+
+
+
+rout 
+
+
+
+
+....el....payload-  kitne key value 
