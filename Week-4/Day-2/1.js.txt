@@ -1,0 +1,17 @@
+Express.js → framework used to build the server/API.
+app.use(express.json()) → parses JSON request body.
+req.body → data sent by client.
+req.params → values coming from URL parameters.
+res.send() → sends response to client.
+fs.readFileSync() → reads file.
+fs.writeFileSync() → writes/updates file.
+JSON.parse() → JSON string → object.
+JSON.stringify() → object → JSON string.
+push() → adds student.
+map() → creates updated array.
+filter() → removes selected student.
+PUT → complete update.
+PATCH → partial update.
+DELETE → removes data.
+:id → route parameter.
+Port 8080 → where your server is listening
