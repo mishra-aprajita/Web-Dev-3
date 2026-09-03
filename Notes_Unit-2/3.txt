@@ -1,0 +1,39 @@
+(mid-term must in 5 marks - middlewere)
+Middlewere- set of instruction to perform certain task. Ex (S/W, H/W),
+Middlewere is a function that sits b/w request response  cycle. It can assess both req
+ object. 
+ request-> server ->response (work in loop).
+
+import 
+application 
+
+
+
+
+
+# Types of Middlewere
+Types of Middlewere
+1.Core M/W/qnbuit m/W
+ex:- express.json()
+router()
+
+2.costom/geternal m/Wex
+ex:- timelogger m/W
+particular time loger 
+routelogger m/W
+watchman m/W
+
+3. External/Third Parts m/W
+ex:- multer 
+CORS (***)
+
+# Middleware chain 
+
+
+nmx autocannon http://locahost8080/home --just to check 
+
+
+
+
+
+It create a 1.txt file in which have all the data 
