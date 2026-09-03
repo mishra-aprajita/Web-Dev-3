@@ -1,36 +1,49 @@
-ID value
-3 method -- use to send server data 
-- request body 
-- request.parms 
-in any website/tshirt/,..........
--  Query parameter 
+1 mins note
+_______________________________________________________________________________________
+Express.js → Node.js framework for APIs/server
 
+app = express application
 
+req → client se aane wali request
+res → server se jaane wala response
 
+req.body   → request body data
+req.params → URL parameter (:id)
+req.query  → query parameter (?id=3)
 
+Route → HTTP method + URL
 
+GET    → Read
+POST   → Create
+PUT    → Complete Update
+PATCH  → Partial Update
+DELETE → Delete
 
+Middleware → function between request and response
+            performs a specific task
 
-rout 
+app.use() → middleware use/register
 
+express.json() → JSON body parse
 
+Payload → actual data sent by client
 
+JSON → JavaScript Object Notation
+JSON.parse() → JSON → JS object
+JSON.stringify() → JS object → JSON
 
-....el....payload-  kitne key value 
+fs.readFileSync()  → read file
+fs.writeFileSync() → write file
 
+map()    → create transformed/updated array
+filter() → keep elements satisfying condition
 
-
-
-
-
-
-
-js. silgle cote ' '
-in json double cote " "
-joson full form 
-json string data type ****
-
-
+CRUD:
+C → POST
+R → GET
+U → PUT/PATCH
+D → DELETE
+_______________________________________________________________________________________
 
 
 
