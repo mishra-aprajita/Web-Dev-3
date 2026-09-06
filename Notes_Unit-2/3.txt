@@ -1,39 +1,58 @@
-(mid-term must in 5 marks - middlewere)
-Middlewere- set of instruction to perform certain task. Ex (S/W, H/W),
-Middlewere is a function that sits b/w request response  cycle. It can assess both req
- object. 
- request-> server ->response (work in loop).
+Middleware — Mid-Term (5 Marks)
+Definition
 
-import 
-application 
+Middleware is a function/set of instructions that performs a specific task during
+ the Request–Response cycle.
 
+It sits between the request and response and can access/modify the request (req)
+ and response (res) objects.
 
+Flow:
+Client Request → Server → Middleware → Response
 
+Types of Middleware
 
+1. Core / Built-in Middleware
 
-# Types of Middlewere
-Types of Middlewere
-1.Core M/W/qnbuit m/W
-ex:- express.json()
-router()
+Provided by Express.
+Examples:
+express.json() → parses incoming JSON data.
+express.urlencoded() → parses form data.
+express.Router() → creates modular routes.
 
-2.costom/geternal m/Wex
-ex:- timelogger m/W
-particular time loger 
-routelogger m/W
-watchman m/W
+2. Custom Middleware
 
-3. External/Third Parts m/W
-ex:- multer 
-CORS (***)
+Middleware created by the developer according to the application's requirement.
+Examples:
+Time Logger Middleware → logs the time of each request.
+Route Logger Middleware → logs requested routes.
+Watchman Middleware → checks/controls requests.
 
-# Middleware chain 
+3. Third-Party / External Middleware
 
+Middleware developed by external libraries/packages.
+Examples:
+Multer → handles file uploads.
+CORS → allows/controls requests between different origins. (Important)
+Middleware Chain
 
-nmx autocannon http://locahost8080/home --just to check 
+Multiple middleware functions can be executed one after another in a sequence.
 
+Request → Middleware 1 → Middleware 2 → Middleware 3 → Route Handler → Response
 
+The next() function is generally used to pass control to the next middleware.
 
+Testing API Performance
 
+Autocannon can be used to test the performance/load of an API.
 
-It create a 1.txt file in which have all the data 
+Example:
+npx autocannon http://localhost:8080/home
+
+It sends multiple requests to the endpoint and provides performance-related 
+data such as requests/sec and latency.
+
+Exam line to remember:
+
+Middleware is a function that sits between the request and response cycle and 
+performs a specific task on the request/response objects.
