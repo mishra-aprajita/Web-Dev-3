@@ -64,13 +64,15 @@ Response: Data/information sent by the server back to the client.
 The server receives the request, processes it, and sends an appropriate response.
 3. Route
 
-A route defines how the server should respond to a particular URL/path and HTTP method.
+A route defines how the server should respond to a particular URL/path and HTTP
+ method.
 
 Example concept:
 
 Method + Path = Route
 
-Different routes can perform different operations such as reading, creating, updating, or deleting data.
+Different routes can perform different operations such as reading, creating,
+ updating, or deleting data.
 
 4. Three Ways to Send/Access Data
 A. Request Body
@@ -107,7 +109,8 @@ Easy trick:
 
 Payload = actual data being sent by the client to the server.
 
-Usually, when talking about APIs, payload refers to the data contained in the request body.
+Usually, when talking about APIs, payload refers to the data contained in the 
+request body.
 
 Example concept:
 
@@ -154,9 +157,11 @@ DELETE → Delete
 8. Middleware — VERY IMPORTANT 5 MARKS
 Definition
 
-Middleware is a function that sits between the request and response cycle and performs a specific task.
+Middleware is a function that sits between the request and response 
+cycle and performs a specific task.
 
-It can access the request and response objects and perform processing before the final response is sent.
+It can access the request and response objects and perform processing before the 
+final response is sent.
 
 Flow:
 
@@ -173,19 +178,25 @@ Error handling
 
 It is a type of middleware.
 
-Its purpose is to process incoming JSON request data so that the server can access the data sent in the request body.
+Its purpose is to process incoming JSON request data so that the server can 
+access the data sent in the request body.
 
 Viva answer:
 
 Why do we need JSON middleware?
 
-To parse incoming JSON data from the request body so that it can be accessed by the server.
+To parse incoming JSON data from the request body so that it can be accessed by 
+the server.
 
 10. Middleware — 5 Mark Answer
 
 If the teacher asks "Explain Middleware", write:
 
-Middleware is a function that executes during the request-response cycle. It sits between the client request and the server response. It can access the request and response objects and perform specific tasks such as parsing data, authentication, logging, validation, and error handling. Middleware helps process a request before it reaches the final route handler.
+Middleware is a function that executes during the request-response cycle. 
+It sits between the client request and the server response. It can access the 
+request and response objects and perform specific tasks such as parsing data, 
+authentication, logging, validation, and error handling. Middleware helps process 
+a request before it reaches the final route handler.
 
 Diagram:
 
@@ -268,7 +279,8 @@ filter()
 
 Used to select elements based on a condition.
 
-Used for deleting a student by keeping all students except the one matching the given ID.
+Used for deleting a student by keeping all students except the one matching the 
+given ID.
 
 16. CRUD
 
@@ -309,10 +321,12 @@ Q. Is JSON a data type?
 A. No. JSON is a data format.
 
 Q. What is the difference between PUT and PATCH?
-A. PUT is generally used for complete replacement/update, while PATCH is used for partial updates.
+A. PUT is generally used for complete replacement/update, while PATCH is used
+ for partial updates.
 
 Q. Why is middleware important?
-A. It allows us to perform processing such as parsing, authentication, validation, and logging during the request-response cycle.
+A. It allows us to perform processing such as parsing, authentication, validation, 
+and logging during the request-response cycle.
 
 Q. What are the five main HTTP methods?
 A. GET, POST, PUT, PATCH, and DELETE.
