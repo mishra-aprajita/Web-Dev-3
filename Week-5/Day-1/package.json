@@ -1,0 +1,16 @@
+{
+    "name": "day-1",
+    "version": "1.0.0",
+    "main": "1.js",
+    "scripts": {
+        "server": "nodemon 1.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "express": "^5.2.1",
+        "nodemon": "^3.1.14"
+    }
+}
