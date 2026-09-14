@@ -61,12 +61,12 @@ Already provided by Node.js; no installation needed.
 
 Examples:
 
-fs
-path
-dns
-http
-crypto
-process
+fs → Files aur folders ko create, read, write aur delete karne ke liye.
+path → File aur folder ke paths ko handle/manage karne ke liye.
+dns → Domain name ko IP address mein convert karne ke liye.
+http → Client aur server ke beech HTTP communication ke liye.
+crypto → Data ki security, hashing aur encryption ke liye.
+process → Node.js program ki current process ki information aur control ke liye.
 
 B. External/Third-party Modules
 Created by other developers and installed using npm.
@@ -191,7 +191,7 @@ Example:
 Existing user:
 
 Name: Aprajita
-Age: 19
+Age: 18
 City: Delhi
 
 PUT → Send the complete updated user.
