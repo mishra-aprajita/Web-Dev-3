@@ -148,7 +148,6 @@ DELETE
 Used to delete data.
 
 Remember:
-
 GET → Read
 POST → Create
 PUT/PATCH → Update
