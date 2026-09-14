@@ -10,7 +10,7 @@ gate
 POST- 
 
 
-
+"*API request ka use client se server ko data/request bhejne ke liye hota hai."
 
 Unit 2 — Node.js & Express.js | Crisp Revision Notes
 1. Node.js
