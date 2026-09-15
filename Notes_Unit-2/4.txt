@@ -1,0 +1,145 @@
+1. Router
+
+Router kya hai?
+Router is used to organize and manage routes in an Express application.
+
+Why use Router?
+
+Code ko clean rakhta hai
+Routes ko separate files mein organize kar sakte hain
+Application ko modular aur maintainable banata hai
+
+Express Router kya hai?
+It is like a mini Express application used specifically for handling routes.
+
+Router ka main purpose?
+→ Route management and organization
+
+app.use() ka role?
+→ Router ko main Express application ke saath connect/mount karta hai.
+
+Viva one-liner:
+
+Router is used to organize different routes in a clean and structured way.
+
+2. Middleware
+
+Middleware kya hai?
+Middleware is a function that works between the request and response cycle.
+
+Flow:
+
+Request → Middleware → Route Handler → Response
+
+Middleware ke main components?
+
+Request
+Response
+Next
+
+next() kya karta hai?
+It passes control to the next middleware or handler.
+
+Viva one-liner:
+
+Middleware processes a request before the final response is sent.
+
+3. CORS
+
+Full form:
+Cross-Origin Resource Sharing
+
+CORS kya hai?
+CORS is a mechanism that allows a frontend and backend running on different origins 
+to communicate through a browser.
+
+Example:
+
+Frontend → Port 3000
+Backend → Port 5000
+
+Different ports = different origins
+
+CORS ki need kyun hoti hai?
+Browser security rules ke wajah se different origins ke requests restricted ho sakte 
+hain. CORS appropriate access allow karta hai.
+
+CORS ke liye package?
+→ cors
+
+CORS authentication hai?
+→ No
+
+CORS API ko secure karta hai?
+→ Not by itself. CORS mainly controls browser-based cross-origin access.
+
+Viva one-liner:
+
+CORS allows communication between frontend and backend when they are running on
+ different origins.
+
+4. Multer
+
+Multer kya hai?
+Multer is a middleware for handling file uploads in Node.js and Express.
+
+Multer kis type ka data handle karta hai?
+→ multipart/form-data
+
+Multer ka use kahan hota hai?
+
+Image upload
+PDF upload
+Documents
+Other files
+
+Uploaded file ki information kahan milti hai?
+→ req.file for a single file
+→ req.files for multiple files
+
+5. Important Multer Methods
+single
+
+→ One file upload karne ke liye.
+
+array
+
+→ Multiple files upload karne ke liye.
+
+fields
+
+→ Different file fields handle karne ke liye.
+
+
+
+
+
+
+***************************************************************************************
+Viva:
+
+Single aur multiple file upload mein difference?
+
+Single file ke liye single use hota hai, while multiple files ke liye array or 
+appropriate multi-field handling use hoti hai.
+
+Router vs CORS vs Multer
+Topic	Main Work
+Router	Routes organize/manage karta hai
+Middleware	Request-response cycle mein processing karta hai
+CORS	Different origins ke beech browser communication allow karta hai
+Multer	File uploads handle karta hai
+Super-short revision
+
+Router → Routes
+Middleware → Request processing
+CORS → Different origins
+Multer → File upload
+multipart/form-data → File upload data type
+*************************************************************************************
+
+
+***"What did you learn today?"
+
+“Today we learned Express Router for managing routes, CORS for communication between
+ different origins, and Multer middleware for handling file uploads.”
