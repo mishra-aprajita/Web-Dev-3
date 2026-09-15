@@ -1,0 +1,36 @@
+{
+    "student": [
+        {
+            "id": 34253451,
+            "name": "raj",
+            "staus": "absent"
+        },
+        {
+            "id": 3,
+            "name": "diksha",
+            "staus": "present"
+        },
+        {
+            "id": 4,
+            "name": "virat"
+        },
+        {
+            "id": 5,
+            "name": "amit kumar"
+        }
+    ],
+    "trainer": [
+        {
+            "id": 1,
+            "name": "vishal sir"
+        },
+        {
+            "id": 2,
+            "name": "rajesh sir"
+        },
+        {
+            "id": 3,
+            "name": "sp sir"
+        }
+    ]
+}
