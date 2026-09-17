@@ -1,0 +1,53 @@
+DATA
+↓
+Raw facts/information
+
+DATABASE
+↓
+Stores and manages data
+
+DBMS
+↓
+Manages database + CRUD
+
+SQL
+↓
+Relational → Tables → Rows + Columns
+
+NoSQL
+↓
+Non-relational → Flexible data models
+
+MongoDB
+↓
+NoSQL + Document-oriented
+
+MongoDB Structure
+↓
+Database → Collection → Document → Field
+
+SQL              MongoDB
+Table       →    Collection
+Row         →    Document
+Column      →    Field
+Primary Key →    _id
+
+mongosh
+↓
+CLI
+
+Compass
+↓
+GUI
+
+CRUD
+↓
+Create → Read → Update → Delete
+
+Create → insertOne / insertMany
+Read   → findOne / find
+Update → updateOne / updateMany
+Delete → deleteOne / deleteMany
+
+Default Port → 27017
+BSON → Binary JSON
