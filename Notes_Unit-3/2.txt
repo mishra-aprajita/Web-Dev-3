@@ -5,6 +5,8 @@ Database → Organized collection of data.
 DBMS → Software used to manage databases and perform CRUD.
 Data Structure → Organizes data for efficient use.
 Algorithm → Step-by-step procedure to solve a problem.
+
+
 2. Types of Database
 
 Relational Database (SQL)
@@ -18,6 +20,8 @@ Non-Relational Database (NoSQL)
 Not based on traditional tables.
 Flexible structure.
 Example: MongoDB
+
+
 3. MongoDB
 MongoDB = NoSQL + Document-oriented database
 Stores data as documents.
@@ -28,22 +32,28 @@ Has a flexible schema.
 Structure:
 Database → Collection → Document → Field
 
+
 4. SQL vs MongoDB
 SQL	MongoDB
 Table	Collection
 Row	Document
 Column	Field
 Primary Key	_id
+
 5. MongoDB Tools
 mongosh → CLI/command-line tool.
 MongoDB Compass → GUI/visual tool.
 MongoDB Community Server → Runs the MongoDB database server.
+
+
 6. Basic Commands
 mongosh             → Open MongoDB Shell
 show dbs            → Show databases
 use college         → Select database
 db                  → Show current database
 show collections    → Show collections
+
+
 7. CRUD
 
 C – Create
@@ -65,6 +75,8 @@ D – Delete
 
 deleteOne() → delete one
 deleteMany() → delete multiple
+
+
 8. Must Remember for Viva
 MongoDB is NoSQL.
 MongoDB stores documents, not rows.
