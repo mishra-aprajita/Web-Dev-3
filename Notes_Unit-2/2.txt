@@ -1,331 +1,170 @@
-1 mins note
-_______________________________________________________________________________________
-Express.js → Node.js framework for APIs/server
+# Express.js – 1-Minute Viva Notes
 
-app = express application
+### Express.js
 
-req → client se aane wali request
-res → server se jaane wala response
+Express.js is a **Node.js framework** used to create **servers and APIs**.
 
-req.body   → request body data
-req.params → URL parameter (:id)
-req.query  → query parameter (?id=3)
+* `app` → Express application
+* `req` → Request received from the client
+* `res` → Response sent from the server
 
-Route → HTTP method + URL
+### Request Data
 
-GET    → Read
-POST   → Create
-PUT    → Complete Update
-PATCH  → Partial Update
-DELETE → Delete
+* `req.body` → Data sent in the request body
+* `req.params` → URL parameters, e.g. `/student/:id`
+* `req.query` → Query parameters, e.g. `/student?id=3`
 
-Middleware → function between request and response
-            performs a specific task
+### Route
 
-app.use() → middleware use/register
+**HTTP Method + URL/Path = Route**
 
-express.json() → JSON body parse
+### HTTP Methods
 
-Payload → actual data sent by client
+* **GET** → Read data
+* **POST** → Create data
+* **PUT** → Completely update data
+* **PATCH** → Partially update data
+* **DELETE** → Delete data
 
-JSON → JavaScript Object Notation
-JSON.parse() → JSON → JS object
-JSON.stringify() → JS object → JSON
+### Request–Response Cycle
 
-fs.readFileSync()  → read file
-fs.writeFileSync() → write file
+**Client → Request → Server → Processing → Response → Client**
 
-map()    → create transformed/updated array
-filter() → keep elements satisfying condition
+* **Request** → Information sent by the client.
+* **Response** → Information sent back by the server.
 
-CRUD:
-C → POST
-R → GET
-U → PUT/PATCH
-D → DELETE
-_______________________________________________________________________________________
+### Params vs Query
 
+| Params                         | Query                                     |
+| ------------------------------ | ----------------------------------------- |
+| Part of the URL path           | Comes after `?`                           |
+| Identifies a specific resource | Provides additional/filtering information |
+| `/student/3`                   | `/student?id=3`                           |
+| Usually uses `:id`             | Uses `key=value`                          |
 
+**Easy trick:**
+`/student/3` → Params
+`/student?id=3` → Query
 
+### Payload
 
+**Payload** means the actual data sent by the client to the server.
 
+Usually, in APIs, the payload is the data inside the **request body**.
 
+Example:
+`ID: 1, Name: Aprajita, Course: CSE`
 
-1. Express.js
-Express.js is a Node.js framework.
-It is used to create servers and APIs.
-It makes handling requests, responses, routes, and middleware easier.
-2. Request–Response Cycle
+Each consists of a **key-value pair**.
 
-Client → Request → Server → Processing → Response → Client
+### Middleware
 
-Request: Data/information sent by the client to the server.
-Response: Data/information sent by the server back to the client.
-The server receives the request, processes it, and sends an appropriate response.
-3. Route
+Middleware is a **function that works between the request and response cycle** and performs a specific task.
 
-A route defines how the server should respond to a particular URL/path and HTTP
- method.
-
-Example concept:
-
-Method + Path = Route
-
-Different routes can perform different operations such as reading, creating,
- updating, or deleting data.
-
-4. Three Ways to Send/Access Data
-A. Request Body
-Contains data sent inside the request.
-Accessed through request body.
-Mainly used when sending larger/structured data.
-Commonly used with POST, PUT, and PATCH.
-Example: student details such as ID, name, course, etc.
-B. Request Parameters
-Used to identify a particular resource through the URL.
-Written as a dynamic part of the route.
-Example concept: /student/3
-Here, 3 is the parameter value.
-Accessed through request parameters.
-C. Query Parameters
-Used to send additional information through the URL.
-Written after ?.
-Example concept: /student?id=3
-id=3 is a query parameter.
-Multiple query parameters can be separated using &.
-5. Params vs Query
-Request Parameter	Query Parameter
-Part of the URL path	Comes after ?
-Used to identify a resource	Used to provide additional/filtering information
-Example: /student/3	Example: /student?id=3
-Usually represented by :id	Written as key=value
-Easy trick:
-
-/student/3 → Params
-
-/student?id=3 → Query
-
-6. Payload
-
-Payload = actual data being sent by the client to the server.
-
-Usually, when talking about APIs, payload refers to the data contained in the 
-request body.
-
-Example concept:
-
-Student data:
-
-ID → 1
-Name → Aprajita
-Course → CSE
-
-Each key-value pair consists of:
-
-Key : Value
-
-So if an object contains ID, Name, and Course, it has 3 key-value pairs.
-
-7. HTTP Methods
-GET
-
-Used to read/retrieve data.
-
-POST
-
-Used to create/add new data.
-
-PUT
-
-Used for complete update/replacement of existing data.
-
-PATCH
-
-Used for partial update of existing data.
-
-DELETE
-
-Used to delete data.
-
-Remember:
-GET → Read
-POST → Create
-PUT/PATCH → Update
-DELETE → Delete
-
-8. Middleware — VERY IMPORTANT 5 MARKS
-Definition
-
-Middleware is a function that sits between the request and response 
-cycle and performs a specific task.
-
-It can access the request and response objects and perform processing before the 
-final response is sent.
-
-Flow:
-
-Request → Middleware → Server/Route Logic → Response
-
-Examples of middleware tasks:
-Parsing request data
-Authentication
-Authorization
-Logging
-Validation
-Error handling
-9. express.json() Concept
-
-It is a type of middleware.
-
-Its purpose is to process incoming JSON request data so that the server can 
-access the data sent in the request body.
-
-Viva answer:
-
-Why do we need JSON middleware?
-
-To parse incoming JSON data from the request body so that it can be accessed by 
-the server.
-
-10. Middleware — 5 Mark Answer
-
-If the teacher asks "Explain Middleware", write:
-
-Middleware is a function that executes during the request-response cycle. 
-It sits between the client request and the server response. It can access the 
-request and response objects and perform specific tasks such as parsing data, 
-authentication, logging, validation, and error handling. Middleware helps process 
-a request before it reaches the final route handler.
-
-Diagram:
-
+**Flow:**
 Client → Request → Middleware → Route/Logic → Response → Client
 
-11. JSON
+Examples:
 
-JSON = JavaScript Object Notation
+* Data parsing
+* Authentication
+* Authorization
+* Logging
+* Validation
+* Error handling
 
-JSON is a data format, not a JavaScript data type.
-It is commonly used for storing and exchanging structured data.
-JSON uses double quotes for keys and string values.
-Important correction:
+`app.use()` → Used to register/use middleware.
 
-JSON is NOT a data type.
+### express.json()
 
-It is a data interchange format.
+`express.json()` is middleware used to **parse incoming JSON request data** so that the server can access the data in the request body.
 
-12. JavaScript vs JSON Quotes
-JavaScript
+**Viva:** Why do we use `express.json()`?
+→ To parse incoming JSON data from the request body.
 
-JavaScript strings can use:
+### JSON
 
-Single quotes
-Double quotes
-Backticks
-JSON
+**JSON = JavaScript Object Notation**
+
+JSON is a **data interchange format**, not a JavaScript data type.
+
+It is commonly used to **store and exchange structured data**.
 
 JSON requires:
 
-Double quotes for keys
-Double quotes for string values
-13. JSON Parse and Stringify
-JSON.parse()
+* Double quotes around keys
+* Double quotes around string values
 
-Converts:
+### JSON.parse() and JSON.stringify()
 
+**JSON.parse()**
 JSON string → JavaScript object
 
-JSON.stringify()
-
-Converts:
-
+**JSON.stringify()**
 JavaScript object → JSON string
 
-Easy trick:
+**Easy trick:**
+**Parse = JSON → JS**
+**Stringify = JS → JSON**
 
-Parse = JSON → JS
+### File System (fs)
 
-Stringify = JS → JSON
+The Node.js **File System (`fs`) module** is used to work with files.
 
-14. File System
+* `fs.readFileSync()` → Reads a file
+* `fs.writeFileSync()` → Writes/updates a file
 
-Node.js provides the File System (fs) module for working with files.
+### Array Methods
 
-In your project it is used to:
+**push()** → Adds an element to an array.
 
-Read student data from the JSON file.
-Write updated student data back to the JSON file.
-Two important operations:
+**map()** → Processes each element and creates a new array. Often used for updating data.
 
-Read file → readFileSync concept
+**filter()** → Selects elements that satisfy a condition. It can be used to remove/delete an item by keeping all other elements.
 
-Write file → writeFileSync concept
+### CRUD
 
-15. Array Methods Used
-push()
+| CRUD | Operation | HTTP Method |
+| ---- | --------- | ----------- |
+| C    | Create    | POST        |
+| R    | Read      | GET         |
+| U    | Update    | PUT / PATCH |
+| D    | Delete    | DELETE      |
 
-Used to add an element to an array.
+### Most Important Viva Answers
 
-Used while creating a new student.
+**Q. What is Express.js?**
+A. Express.js is a Node.js framework used to build servers and APIs.
 
-map()
+**Q. What is a route?**
+A. A route is a combination of an HTTP method and a path that defines how a request is handled.
 
-Used to process each element and create a new array.
+**Q. What is middleware?**
+A. Middleware is a function that works during the request-response cycle and performs a specific task.
 
-Used for updating student data.
+**Q. What is request body?**
+A. It contains data sent by the client inside the request.
 
-filter()
+**Q. What are request parameters?**
+A. They are dynamic values included in the URL path.
 
-Used to select elements based on a condition.
+**Q. What are query parameters?**
+A. They are parameters passed in the URL after `?`.
 
-Used for deleting a student by keeping all students except the one matching the 
-given ID.
+**Q. What is a payload?**
+A. Payload is the actual data sent by the client to the server.
 
-16. CRUD
+**Q. What is JSON?**
+A. JSON stands for JavaScript Object Notation and is a format used to exchange structured data.
 
-CRUD represents the four basic operations of an API:
+**Q. Is JSON a data type?**
+A. No. JSON is a data interchange format.
 
-CRUD	Operation	HTTP Method
-C	Create	POST
-R	Read	GET
-U	Update	PUT / PATCH
-D	Delete	DELETE
-17. Most Important Viva Questions
+**Q. PUT vs PATCH?**
+A. PUT is generally used for a complete update or replacement, while PATCH is used for a partial update.
 
-Q. What is Express.js?
-A. A Node.js framework used to build servers and APIs.
+**Q. Why is middleware important?**
+A. It allows us to perform tasks such as parsing, authentication, validation, and logging during the request-response cycle.
 
-Q. What is a route?
-A. A combination of an HTTP method and path that defines how a request is handled.
-
-Q. What is middleware?
-A. A function that operates between the request and response cycle.
-
-Q. What is request body?
-A. Data sent by the client inside the request.
-
-Q. What are request parameters?
-A. Dynamic values included as part of the URL path.
-
-Q. What are query parameters?
-A. Parameters passed in the URL after ?.
-
-Q. What is payload?
-A. The actual data sent by the client to the server.
-
-Q. What is JSON?
-A. JavaScript Object Notation, a format used to exchange/store structured data.
-
-Q. Is JSON a data type?
-A. No. JSON is a data format.
-
-Q. What is the difference between PUT and PATCH?
-A. PUT is generally used for complete replacement/update, while PATCH is used
- for partial updates.
-
-Q. Why is middleware important?
-A. It allows us to perform processing such as parsing, authentication, validation, 
-and logging during the request-response cycle.
-
-Q. What are the five main HTTP methods?
+**Q. What are the five main HTTP methods?**
 A. GET, POST, PUT, PATCH, and DELETE.
