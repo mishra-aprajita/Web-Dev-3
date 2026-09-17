@@ -62,7 +62,8 @@ Middleware processes a request before the final response is sent.
 
 ### What is CORS?
 
-CORS is a mechanism that allows a frontend and backend running on different origins to communicate through a browser.
+CORS is a mechanism that allows a frontend and backend running on different origins 
+to communicate through a browser.
 
 ### Example:
 
@@ -73,7 +74,8 @@ Backend → Port 5000
 
 ### Why is CORS needed?
 
-Because of browser security rules, requests from different origins can be restricted. CORS allows appropriate access.
+Because of browser security rules, requests from different origins can be restricted.
+ CORS allows appropriate access.
 
 ### Package for CORS?
 
@@ -89,7 +91,8 @@ Because of browser security rules, requests from different origins can be restri
 
 ### Viva one-liner:
 
-CORS allows communication between frontend and backend when they are running on different origins.
+CORS allows communication between frontend and backend when they are running on 
+different origins.
 
 ---
 
@@ -137,7 +140,8 @@ Multer is a middleware for handling file uploads in Node.js and Express.
 
 ### Difference between single and multiple file upload?
 
-Single is used for a single file, while multiple files can be handled using `array` or appropriate multi-field handling.
+Single is used for a single file, while multiple files can be handled using `array`
+ or appropriate multi-field handling.
 
 ---
 
@@ -162,4 +166,5 @@ Single is used for a single file, while multiple files can be handled using `arr
 
 ### "What did you learn today?"
 
-“Today we learned Express Router for managing routes, CORS for communication between different origins, and Multer middleware for handling file uploads.”
+“Today we learned Express Router for managing routes, CORS for communication
+ between different origins, and Multer middleware for handling file uploads.”
