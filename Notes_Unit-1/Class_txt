@@ -1,187 +1,51 @@
-Node.js – Quick Viva Notes
-1. OS – Operating System
+1.OS-Operating system 
+2.Path-if i want to find any folder 
+3.Dns- domain name system , Ip add.......
+4.fs (File System): Used to work with files and folders in Node.js.
+...dns (Domain Name System): Used to find the IP address of a domain name.
 
-An Operating System (OS) is system software that manages the computer’s hardware, software, files, and resources.
 
-Examples: Windows, macOS, Linux.
+5.http- HyperText Transfer Protocol
+It is a protocol used for communication between a web browser (client) and a web server. make server 
+***(HTTP ek protocol/rule set hai jo browser (client) aur server ke beech data communicate/transfer karne ke liye use hota hai.)
+*----communication -> GATE, POST, PUT, PATCH, DELETE 
+---GET → Server se data lena
+POST → Server par naya data bhejna/create karna
+PUT → Existing data ko completely update karna
+PATCH → Existing data ko partially update karna
+DELETE → Server se data delete karna-----
+"que. difference b/w put&patch"
 
-2. Path
+//*Web browser:-- only use get method to send request to server.that's why we use 
+ postmen to send rewuest to server by other methods like post,put,patch,delete etc.
+ and to test the api's. we can also use postman to send get request to server.*//
 
-Path is used to specify the location of a file or folder in a computer.
 
-In Node.js, the Path module helps us work with file and folder paths.
 
-3. DNS – Domain Name System
 
-DNS (Domain Name System) converts a domain name into its IP address.
+6.process-argb
+7.crypto 
 
-Example:
-google.com → IP address
+8.#model- self-contained code 
+*-core model - this are called core model cus they are pre installed with node.js and we can use them without without installing 
+*-
+*-Internal model-
+*-External Model
 
-It helps the browser find the correct server.
+9.Cripto - used for hasing and encryting data.. 
+10.CLI - node.js.and , data capturing 
+11.Rouder->
 
-4. FS – File System
+12.How to install node & there steps.
+--step-1 npm init -y [setup node.js app]
+step-2 npm i is-even installing is-even [installing is even external model]
+step-3 import is-even module for usecase
+step-4 use--
 
-The FS (File System) module is used in Node.js to work with files and folders.
-
-It can be used to:
-
-Create files
-Read files
-Write/update files
-Delete files
-Rename files
-
-DNS: Finds the IP address of a domain name.
-FS: Works with files and folders.
-
-5. HTTP – HyperText Transfer Protocol
-
-HTTP is a protocol/rule set used for communication and data transfer between a client (browser) and a server.
-
-HTTP methods include:
-
-GET → Used to get/read data from the server.
-POST → Used to send/create new data on the server.
-PUT → Used to completely update existing data.
-PATCH → Used to partially update existing data.
-DELETE → Used to delete data from the server.
-Difference between PUT and PATCH
-PUT: Completely updates/replaces the resource.
-PATCH: Updates only specific parts of the resource.
-Browser and Postman
-
-A web browser commonly sends GET requests when accessing web pages.
-
-Postman is used to test APIs and can send different HTTP requests such as:
-GET, POST, PUT, PATCH, and DELETE.
-
-6. Process – process.argv
-
-process.argv is used in Node.js to capture command-line arguments provided while running a program.
-
-It allows us to take input/data from the CLI (Command Line Interface).
-
-7. Crypto
-
-The Crypto module in Node.js provides cryptographic functionality.
-
-It can be used for:
-
-Hashing
-Encryption/decryption
-Generating secure random values
-Creating cryptographic keys
-8. Types of Modules in Node.js
-
-A module is a self-contained piece of code that can be reused in a Node.js application.
-
-Core Modules
-Built into Node.js.
-No separate installation is required.
-Examples: fs, path, http, dns, crypto.
-Internal/Custom Modules
-Modules created by the developer for their own application.
-Used to organize and reuse application code.
-External Modules
-Modules created by other developers and available through npm.
-Usually installed using npm install.
-Example: is-even.
-9. Crypto
-
-The Crypto module is commonly used for hashing and encryption of data.
-
-Hashing: Converts data into a fixed-length value and is generally one-way.
-Encryption: Converts data into an encoded form that can be decrypted using the appropriate key.
-
-10. CLI – Command Line Interface
-
-CLI allows users to interact with a computer/program by entering commands in a terminal.
-
-In Node.js, CLI can also be used for capturing input through command-line arguments, such as using process.argv.
-
-11. Router
-
-A Router is used to organize and manage different routes/endpoints of an application.
-
-It helps keep routes clean, structured, and separate.
-
-Example routes:
-
-/users
-/products
-/login
-12. Installing Node.js and Creating a Node.js Project
-
-Step 1: Initialize a Node.js application
-npm init -y
-
-Step 2: Install an external module
-npm i is-even
-
-Step 3: Import/require the module into the program.
-
-Step 4: Use the module according to your requirement.
-
-Important: npm is the Node Package Manager, used to install and manage packages.
-
-13. CommonJS vs ES Modules
-CommonJS	ES Modules
-Uses require()	Uses import
-Uses module.exports	Uses export
-Traditional Node.js module system	Modern JavaScript module system
-
-In short:
-CommonJS → require / module.exports
-ES Modules → import / export
-
-14. Express.js
-
-Express.js is a minimal and flexible web framework for Node.js.
-
-It is mainly used to create:
-
-Web servers
-REST APIs
-Routes
-Backend applications
-
-Express is unopinionated, meaning it does not force developers to follow one specific project structure or way of doing things.
-
-15. JSON – JavaScript Object Notation
-
-JSON stands for JavaScript Object Notation.
-
-It is a lightweight and commonly used data interchange/transfer format between clients and servers.
-
-JSON.stringify()
-
-Converts a JavaScript object into a JSON string.
-
-Object → JSON string
-
-JSON.parse()
-
-Converts a JSON string into a JavaScript object.
-
-JSON string → JavaScript object
-
-Super-short revision:
-
-OS → Manages computer resources
-Path → Works with file/folder paths
-DNS → Domain name → IP address
-FS → Works with files/folders
-HTTP → Client-server communication
-GET → Read
-POST → Create
-PUT → Complete update
-PATCH → Partial update
-DELETE → Delete
-process.argv → CLI arguments
-Crypto → Hashing/encryption
-Router → Organizes routes
-Express.js → Node.js web framework
-JSON → Data interchange format
-stringify → Object → String
-parse → String → Object
+13.common vs es modules 
+14.express.js is node.js frame work that is specially used for create web api , it is fat minimal use
+Unopinated 
+minimist 
+***15.JSON - js object notation , universal data trans mation format
+stringify 
+parse 
