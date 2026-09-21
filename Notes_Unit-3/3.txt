@@ -1,0 +1,16 @@
+mongosh
+cls
+db -> current db name
+show dbs -> show all existing db
+use dbName -> switch db that we want to use
+show collections -> show all the existing collection
+db.createCollection("collectionName") -> create new collection
+db.collectionName.insertOne({}) -> add 1 new document in collection
+db.collectionName.insertMany([{},{}]) -> add new documents in collection
+db.collectionName.find() -> return all document in collection
+db.collectionName.findOne() -> return 1st match document in collection
+db.collectionName.find({}) -> return all match document as per query from collection
+db.collectionName.updateOne({query},{$set:{}}) -> update 1 document in collection
+db.collectionName.updateMany({query},{$set:{}}) -> update all document in collection
+db.collectionName.deleteOne({query}) -> delete 1 document in collection
+db.collectionName.deleteMany({query}) -> delete all document in collection
