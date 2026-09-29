@@ -1,0 +1,4 @@
+VS Code me Javascript (.js) file banakar data ko MongoDB me insert/save
+karke show karwane ke liye alag-alag commands ka use hota hai.
+npm init -y
+npm install mongodb
