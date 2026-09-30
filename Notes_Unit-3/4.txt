@@ -1,0 +1,11 @@
+mongoose validate 
+structure 
+mogooes is a         it has 3 step 
+1-blue print structure schema 
+2-bu use of schrma create stucutre 
+collection name --- which schrma 
+now model ready 
+data create document dlt uypdate 
+
+till now mongoose data base commuecation 
+api is use to commenecation
