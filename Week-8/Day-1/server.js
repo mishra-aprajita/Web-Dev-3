@@ -1,7 +1,7 @@
 const express = require ("express");
 
 
-const {connection} = require ("/db")
+const {connection} = require ("./db");
 
 const app = express();
 app.get("/home", (req,res)=>{
