@@ -1,0 +1,45 @@
+1.what is the diff. between  Authentication and Authorization?
+
+.Authentication:(Verification/Gdentity)
+Zoom- get in this websites but not able to watch seres without authorization.
+Netflix
+.Authorization:(Permission/Acccess)
+Amazon- not directly order fir need to make profile.
+
+
+
+
+Note App Architecture & Authentication Flow
+
+1. Roles / Entities
+- User (Verify / Identity)
+- Note
+
+2. User Registration (/register)
+- Inputs: Name, Email, Password
+- Process: Hashes password using bcrypt.hash (creates hashed password). Saves user data into the Database (DB).
+
+3. User Login (/login)
+- Inputs: Email, Password
+- Process: 
+  1. Compares hashed password using bcrypt.compare.
+  2. Once verified, generates a token using jsonwebtoken.sign (creates a new token).
+  3. Sends the JWT Token back to the client.
+
+4. Authentication Middleware (Auth M/W)
+- Function: Validates incoming requests to protected routes.
+- Method: Uses jsonwebtoken.verify to check token validity.
+
+5. Application Routes & Navigation Flow
+- /home
+- 1 /register
+- 2 /login
+- /dashboard
+- /admin/data
+
+
+
+
+step-1 
+npm init -y 
+npm i rexpress nodemon mongoose
