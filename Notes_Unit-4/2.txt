@@ -19,4 +19,7 @@ JWT has 3 parts:
 tampered with.
 
 process.env is used in Node.js to access environment variables, such as MONGO_URL,
- JWT_SECRET, and PORT, which store application configuration and sensitive information.
+JWT_SECRET, and PORT, which store application configuration and sensitive information.
+
+Node.js stores all available Environment Variables inside the process.env object,
+allowing applications to access configuration values at runtime.
