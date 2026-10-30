@@ -29,6 +29,13 @@ JWT has 3 parts:
 3. Signature: Verifies that the token is authentic and its data has not been 
 tampered with.
 
+Advantages of JWT (Exam Point of View)
+1. Stateless: Server doesn't need to store session data for every user.
+2. Secure: Digital signature helps verify the token's authenticity.
+3. Compact: JWT is small and easy to transmit.
+4. Scalable: Suitable for applications running across multiple servers.
+5. Cross-Platform: Can be used with different programming languages and platforms.
+
 process.env is used in Node.js to access environment variables, such as MONGO_URL,
 JWT_SECRET, and PORT, which store application configuration and sensitive information.
 
