@@ -1,3 +1,8 @@
+*Password Hashing
+Password Hashing is the process of converting a plain-text password into a fixed-length,
+ irreversible string of characters using a mathematical hashing algorithm before storing 
+ it in the database.
+
 Salt: A unique, random string added to a password before hashing to make
  passwords much harder to crack.
 
@@ -7,6 +12,12 @@ secure, one-way encrypted password string.
 bcrypt.compare(): A method that checks if a user's plain-text password matches the 
 encrypted hash stored in the database, returning true or false.
 
+Quuestion:If hashing passwords is so important, should developers write their own hashing 
+algorithm from scratch every time? 
+Answer:No, Developers use trusted libraries like bcrypt that automatically generate salts 
+and securely hash passwords. 
+
+
 JWT (JSON Web Token) is a token used to verify a user's identity.
 It securely transfers information between a client and a server.
 It consists of three parts: Header, Payload, and Signature.
@@ -14,7 +25,7 @@ It is commonly used for authentication and authorization in web applications.
 
 JWT has 3 parts:
 1. Header: Specifies the token type and the algorithm used.
-2. Payload: Contains user information, such as User ID and role.
+2. Payload: Contains user information, suc as User ID and role.
 3. Signature: Verifies that the token is authentic and its data has not been 
 tampered with.
 

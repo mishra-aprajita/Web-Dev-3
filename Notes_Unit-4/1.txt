@@ -7,6 +7,15 @@ Netflix
 Amazon- not directly order fir need to make profile.
 
 
+---Types of Authentication---
+1.Password-Based Authentication: Uses a username/email and password to verify a user's identity.
+2.Token-Based Authentication: Uses a token, such as JWT, to authenticate users and 
+provide access to protected resources.
+3 OTP-Based Authentication: Uses a One-Time Password sent to a registered mobile
+ number or email for verification.
+4 Biometric Authentication: Uses fingerprints, facial recognition, or iris scans to
+ verify a user's identity.
+5. Multi-Factor Authentication (MFA): Uses two or more verification methods, such as a password and OTP, for better security.  
 
 
 Note App Architecture & Authentication Flow
