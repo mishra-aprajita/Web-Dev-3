@@ -17,3 +17,6 @@ JWT has 3 parts:
 2. Payload: Contains user information, such as User ID and role.
 3. Signature: Verifies that the token is authentic and its data has not been 
 tampered with.
+
+process.env is used in Node.js to access environment variables, such as MONGO_URL,
+ JWT_SECRET, and PORT, which store application configuration and sensitive information.
