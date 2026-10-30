@@ -3,14 +3,14 @@ Password Hashing is the process of converting a plain-text password into a fixed
  irreversible string of characters using a mathematical hashing algorithm before storing 
  it in the database.
 
-Salt: A unique, random string added to a password before hashing to make
- passwords much harder to crack.
-
 bcrypt.hash(): A method that takes a plain-text password and a salt to create a 
 secure, one-way encrypted password string.
 
 bcrypt.compare(): A method that checks if a user's plain-text password matches the 
 encrypted hash stored in the database, returning true or false.
+
+Salt: A unique, random string added to a password before hashing to make
+ passwords much harder to crack
 
 Quuestion:If hashing passwords is so important, should developers write their own hashing 
 algorithm from scratch every time? 
