@@ -54,4 +54,16 @@ npm init -y
 npm i express nodemon mongoose
 .......
 ****mvs ****
-
+MVC Architecture in Web Development
+Definition: MVC stands for Model-View-Controller. It is a software architectural 
+pattern used to divide a web application into three components: Model, View, and 
+Controller. It makes applications easier to develop, maintain, and manage.
+1. Model:
+- Manages application data.
+- Handles database operations like INSERT, UPDATE, DELETE and SELECT.
+2. View:
+- Represents the user interface.
+- Displays data using HTML, CSS and templates.
+3. Controller:
+- Handles user requests.
+- Processes requests and connects Model with View.
