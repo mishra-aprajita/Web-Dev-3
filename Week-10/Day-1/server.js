@@ -1,25 +1,24 @@
-const express = require("express");
+
 const http = require("http");
-    
+const { Server } = require("socket.io");
 
-const {Server} = require("socket.io");
+const server = http.createServer();
 
-const app = express();
-const httpserver = http.createServer(app);
-const io = new Server(server);
-
-io.on("connection",(socket) =>{
-    console.log("Connection Established");
+const io = new Server(server, {
+    cors: {
+        origin: "*"
+    }
 });
 
-socket.emit("chat","Hello from server");
+io.on("connection", (socket) => {
+    console.log("Client connected");
 
-socket.emit("msg",(cd) =>{
-    console.log(cd);
+    socket.on("chat", (msg) => {
+        console.log(msg);
+        socket.emit("chat", "Hello from server");
+    });
 });
 
-
-
-app.listen(3000, () => {
-  console.log("Server Satrted");
+server.listen(8080, () => {
+    console.log("Server running on port 8080");
 });

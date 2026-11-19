@@ -10,16 +10,19 @@
     <h1>Welcome to socket.io client side</h1>
 
 </body>
+
+<script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
+
 <script>
-    const socket = io ("ws:http://localhost:8080/",{
-        "transport":["websocket"]
-    });
-
-    socket.emit("chat","Hello from client");
-
-    socket.on("chat",(cd) =>{
-    console.log(cd);
+const socket = io("http://localhost:8080", {
+    transports: ["websocket"]
 });
 
+socket.emit("chat", "Hello from client");
+
+socket.on("chat", (cd) => {
+    console.log(cd);
+});
 </script>
+
 </html>
