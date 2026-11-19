@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.socket.io/4.8.4/socket.io.min.js" integrity="sha384-fBrXvbDtHoeKWJ/hcA6M+YGueiDW+h45I7V6F2kD1S8bOkrF9rZYPLVkCR6BLR/1" crossorigin="anonymous"></script>
+    <title>Socket.IO Chat</title>
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
 </head>
 <body>
-    <h1>Welcome to socket.io client side</h1>
-
+    <h1>Welcome to socket.io client side</h1>   
+    
 </body>
+</html>
 
-<script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
 
 <script>
 const socket = io("http://localhost:8080", {
@@ -23,6 +21,14 @@ socket.emit("chat", "Hello from client");
 socket.on("chat", (cd) => {
     console.log(cd);
 });
+
+socket.emit("msg", "New message");
+
+socket.on("announce", (msg) => {
+    console.log(msg);
+});
 </script>
 
-</html>
+
+
+
